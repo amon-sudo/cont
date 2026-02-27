@@ -2,6 +2,8 @@
 import express from 'express'
 import path, {dirname} from 'path'
 import { fileURLToPath } from 'url'
+import authRoutes from './routes/authRoutes.js'
+import todoRoutes from './routes/todo-Routes.js'
 const app = express()
 
 const PORT = process.env.PORT|| 3000
@@ -25,7 +27,9 @@ app.get('/', (req, res) =>{
 })
 
 
+//ROUTES
 
+app.use('/auth', todoRoutes)
 
 app.listen(PORT, () =>{
     console.log(`server now running on: ${PORT}`)
