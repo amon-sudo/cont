@@ -29,7 +29,8 @@ app.get('/', (req, res) =>{
 
 //ROUTES
 
-app.use('/auth', todoRoutes)
+app.use('/auth', authRoutes)
+app.use('/todo', todoRoutes)
 
 app.listen(PORT, () =>{
     console.log(`server now running on: ${PORT}`)
