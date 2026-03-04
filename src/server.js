@@ -23,7 +23,7 @@ app.use(express.static(path.join(__dirname, '../public'))) // THIS middleware wa
 
 //here is where we have called the path.
 app.get('/', (req, res) =>{
-        res.sendFile(path.join(__dirname, 'public', 'index.html')) // now this is how the html will find the 
+        res.sendFile(path.join(__dirname, '../public', 'index.html')) // now this is how the html will find the 
 })
 
 
