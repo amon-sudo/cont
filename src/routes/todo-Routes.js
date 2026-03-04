@@ -5,7 +5,11 @@ import db from '../db.js'
 const router = express.Router()
 
 
-router.get('/', (req, res) =>{}) //get all to do for already loged in users
+router.get('/', (req, res) =>{
+    const getTodos = db.prepare("SELECT * FROM todos WHERE user_id = ?")
+    const todos = getTodos.all(req.userid)
+    res.json(todos)
+}) //get all to do for already loged in users
 
 // creating a new to do
 
