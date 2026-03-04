@@ -21,7 +21,8 @@ const __dirname = dirname(__filename)
 app.use(express.json()) // this one as i know is for enabling the json received
 // now it still thinks that the files are in the src folder when they are actually in the public 
 // folder so we have tell itwhere the are actually. and also we  need the express mildware
-app.use(express.static(path.join(__dirname, '../public'))) // THIS middleware was helpsul to load the frontend file.
+// THIS middleware was helpsul to load the frontend file.
+app.use(express.static(path.join(__dirname, '../public'))) 
 
 
 
