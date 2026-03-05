@@ -40,7 +40,7 @@ router.put('/:id', (req, res) =>{
 
 router.delete('/:id', (req, res) => {
     const {id} =req.params
-    const
+    const deleteTodo = db.prepare(`DELETE`)
 })
 
 export default router
