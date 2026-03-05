@@ -20,5 +20,11 @@ Content-Type: application/json
     "username": "elgringo@gmail.com",
     "password": "123456"
 }
-###
+
+### fetch all todos / GET todos {protected}
 GET http://localhost:3000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzcyNzM1MDE4LCJleHAiOjE3NzI4MjE0MTh9.lVlI_TY_cbN3DtBGy7OIqGrnS157c6Kzea8zBDV7LUE
+
+
+### cretes anew todo post also prtected
+POST http://localhost:3000/todos
