@@ -23,10 +23,23 @@ Content-Type: application/json
 
 ### fetch all todos / GET todos {protected}
 GET http://localhost:3000/todos
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzcyNzM1MDE4LCJleHAiOjE3NzI4MjE0MTh9.lVlI_TY_cbN3DtBGy7OIqGrnS157c6Kzea8zBDV7LUE
-
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzcyNzQwNjA3LCJleHAiOjE3NzI4MjcwMDd9.uZEXc1esYnvFbGuAr1mYT08K72-_E1C4WVES93qFrd4
 
 ### cretes anew todo post also prtected
 POST http://localhost:3000/todos
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzcyNzM1MDE4LCJleHAiOjE3NzI4MjE0MTh9.lVlI_TY_cbN3DtBGy7OIqGrnS157c6Kzea8zBDV7LUE
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzcyNzQwNjA3LCJleHAiOjE3NzI4MjcwMDd9.uZEXc1esYnvFbGuAr1mYT08K72-_E1C4WVES93qFrd4
+Content-Type: application/json
 
+{
+    "task" : "finished coding the project"
+}
+
+
+### update a to do using PUT/todo/:ID  (protected)
+PUT http://localhost:3000/todos/2?pages=4
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzcyNzQwNjA3LCJleHAiOjE3NzI4MjcwMDd9.uZEXc1esYnvFbGuAr1mYT08K72-_E1C4WVES93qFrd4
+Content-Type: application/json
+
+{
+    "completed": 1
+}
