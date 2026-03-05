@@ -20,3 +20,6 @@ Content-Type: application/json
     "username": "elgringo@gmail.com",
     "password": "123456"
 }
+
+### fetch all todos / GET todos {protected}
+GET http:/localhost:3000/todos
