@@ -46,10 +46,5 @@ Content-Type: application/json
 
 
 ### deltes a to do using PUT/todo/:ID  (protected)
-DELETE  http://localhost:3000/todos/2?pages=4
+DELETE  http://localhost:3000/todos/2
 Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzcyNzQzMDEzLCJleHAiOjE3NzI4Mjk0MTN9.fdA32zkOPz5AFjoPKPg4Z_KdG3wnNa8cEL_wHAgCYGQ
-Content-Type: application/json
-
-{
-    "completed": 1
-}
