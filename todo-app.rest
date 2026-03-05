@@ -23,11 +23,11 @@ Content-Type: application/json
 
 ### fetch all todos / GET todos {protected}
 GET http://localhost:3000/todos
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzcyNzQwNjA3LCJleHAiOjE3NzI4MjcwMDd9.uZEXc1esYnvFbGuAr1mYT08K72-_E1C4WVES93qFrd4
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzcyNzQzMDEzLCJleHAiOjE3NzI4Mjk0MTN9.fdA32zkOPz5AFjoPKPg4Z_KdG3wnNa8cEL_wHAgCYGQ
 
 ### cretes anew todo post also prtected
 POST http://localhost:3000/todos
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzcyNzQwNjA3LCJleHAiOjE3NzI4MjcwMDd9.uZEXc1esYnvFbGuAr1mYT08K72-_E1C4WVES93qFrd4
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzcyNzQzMDEzLCJleHAiOjE3NzI4Mjk0MTN9.fdA32zkOPz5AFjoPKPg4Z_KdG3wnNa8cEL_wHAgCYGQ
 Content-Type: application/json
 
 {
@@ -37,7 +37,7 @@ Content-Type: application/json
 
 ### update a to do using PUT/todo/:ID  (protected)
 PUT http://localhost:3000/todos/2?pages=4
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzcyNzQwNjA3LCJleHAiOjE3NzI4MjcwMDd9.uZEXc1esYnvFbGuAr1mYT08K72-_E1C4WVES93qFrd4
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzcyNzQzMDEzLCJleHAiOjE3NzI4Mjk0MTN9.fdA32zkOPz5AFjoPKPg4Z_KdG3wnNa8cEL_wHAgCYGQ
 Content-Type: application/json
 
 {

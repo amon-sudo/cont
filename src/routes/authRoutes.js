@@ -22,7 +22,7 @@ router.post('/register', (req, res) =>{
             //now that we already have a new user, we want to create a default to do, or show them there way 
             // around the website
 
-            const defaultTodo = `Hello! :) Add your first todo!`
+            const defaultTodo = `Hello! Add your first todo!`
             const insertTodo = db.prepare(`INSERT INTO todos (user_id, task)
                 VALUES (?, ?)`)
             insertTodo.run(result.lastInsertRowid, defaultTodo)
