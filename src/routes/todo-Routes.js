@@ -43,6 +43,7 @@ router.delete('/:id', (req, res) => {
     const userid = req.userid
     const deleteTodo = db.prepare(`DELETE FROM todos WHERE id = ? AND user_id = ?`)
     deleteTodo.run(id, userid)
+    res.send({message: "todo deleted"})
 })
 
 export default router
